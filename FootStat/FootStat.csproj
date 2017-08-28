@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F408818-52E1-426D-85D0-80727FDE94C7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FootStat</RootNamespace>
+    <AssemblyName>FootStat</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar">
+      <HintPath>..\packages\CircularProgressBar.2.5.6403.13419\lib\net35-client\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Build.Tasks.v4.0" />
+    <Reference Include="Microsoft.Build.Utilities.v4.0" />
+    <Reference Include="microsoft.msxml, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Workflow.Compiler, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WpfControlLibrary1">
+      <HintPath>..\..\WindowsFormsApplication2\WpfControlLibrary1\bin\Debug\WpfControlLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajoutement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ajoutement.Designer.cs">
+      <DependentUpon>ajoutement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllTests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllTests.Designer.cs">
+      <DependentUpon>AllTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brodi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Brodi.Designer.cs">
+      <DependentUpon>Brodi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calcules.cs" />
+    <Compile Include="EvalPhysique.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EvalPhysique.Designer.cs">
+      <DependentUpon>EvalPhysique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="evaluation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="evaluation.Designer.cs">
+      <DependentUpon>evaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fiches.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fiches.Designer.cs">
+      <DependentUpon>Fiches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="guide.Designer.cs">
+      <DependentUpon>guide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listJoeur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="listJoeur.Designer.cs">
+      <DependentUpon>listJoeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="modifier.Designer.cs">
+      <DependentUpon>modifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MorphPhys.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MorphPhys.Designer.cs">
+      <DependentUpon>MorphPhys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printWords.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recherche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Recherche.Designer.cs">
+      <DependentUpon>Recherche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\lang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StoreData.cs" />
+    <Compile Include="Technique.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Technique.Designer.cs">
+      <DependentUpon>Technique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Verification.cs" />
+    <EmbeddedResource Include="ajoutement.resx">
+      <DependentUpon>ajoutement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllTests.resx">
+      <DependentUpon>AllTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brodi.resx">
+      <DependentUpon>Brodi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvalPhysique.resx">
+      <DependentUpon>EvalPhysique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="evaluation.resx">
+      <DependentUpon>evaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fiches.resx">
+      <DependentUpon>Fiches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guide.resx">
+      <DependentUpon>guide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listJoeur.resx">
+      <DependentUpon>listJoeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifier.resx">
+      <DependentUpon>modifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MorphPhys.resx">
+      <DependentUpon>MorphPhys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recherche.resx">
+      <DependentUpon>Recherche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\lang.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>lang.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technique.resx">
+      <DependentUpon>Technique.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEW1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajouter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajouter1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evaluation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recherche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reccherche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-left-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-print-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer-icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer-icon %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basket-full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart-bar-chart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bottoms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\joueurs\Ajouters.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ajouters.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9J2wqF4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gass1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gass2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gass3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper-football-2 copie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper-football-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jNaJ8Ny.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jNaJ822222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-opie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-opie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-516154.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sans titre-1 copie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sans titre-1 copie1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left copie.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lefssss.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action-exit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grass-background-hd-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sans titre-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FINALS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FINALS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FINALS2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FINALS3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ufuyguyh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ijjll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ends.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sans titre-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajouter2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajouter3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acceuls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMA-21.png" />
+    <None Include="Resources\SMA-25_PNG_High_Small_grande1.png" />
+    <None Include="Resources\WZjZK0Q.jpg" />
+    <None Include="Resources\SCH.png" />
+    <None Include="Resources\SMA-25_PNG_High_Small_grande.png" />
+    <None Include="Resources\SMA-2.png" />
+    <None Include="Resources\grass-background-hd-1.bmp" />
+    <None Include="Resources\AC1.jpg" />
+    <None Include="Resources\AC2.png" />
+    <None Include="Resources\AJ.png" />
+    <None Include="Resources\EVS.png" />
+    <None Include="Resources\GD.png" />
+    <None Include="Resources\BRD.png" />
+    <None Include="Resources\eval.jpg" />
+    <None Include="Resources\1_153637865_n.jpg" />
+    <Content Include="Resources\grassss.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

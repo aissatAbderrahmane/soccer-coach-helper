@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootStat", "FootStat\FootStat.csproj", "{0F408818-52E1-426D-85D0-80727FDE94C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+		Description = Created By Aissat Abderrahmane Kaddour : Ahmed.3abdolah@gmail.com | 0796776140
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F408818-52E1-426D-85D0-80727FDE94C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F408818-52E1-426D-85D0-80727FDE94C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F408818-52E1-426D-85D0-80727FDE94C7}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{0F408818-52E1-426D-85D0-80727FDE94C7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F408818-52E1-426D-85D0-80727FDE94C7}.Release|Default.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+		Description = Created By Aissat Abderrahmane Kaddour : Ahmed.3abdolah@gmail.com | 0796776140
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+		Description = Created By Aissat Abderrahmane Kaddour : Ahmed.3abdolah@gmail.com | 0796776140
+	EndGlobalSection
+EndGlobal
