@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Resources;
 using System.Globalization;
 using System.Diagnostics;
+using System.IO;
 
 namespace FootStat
 {
@@ -21,23 +22,45 @@ namespace FootStat
         private CultureInfo cul;
         private int ID;
         private StoreData db = new StoreData();
-        private printWords printer = new printWords(@"C:\Users\MR.CPU\Documents\Visual Studio 2015\Projects\FootStat\FootStat\bin\Debug\fch.docx");
-         
-        public evaluation(Form1 fr,string type,int id)
+        private printWords printer ;
+        private int NR;
+        public evaluation(Form1 fr,string type,int id,int nr)
         {
+            string tempee = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
             form1 = fr;
             this.type = type;
             ID = id;
             InitializeComponent();
+            NR = nr;
         }
 
         private void ret_Click(object sender, EventArgs e)
         {
             form1.Evaluations_Click(sender,e);
         }
-
+        private string EquipeImg(string name)
+        {
+            string equipe_name = null;
+            switch (name)
+            {
+                case "Rapide Club Rélizane": equipe_name = "RCR"; break;
+                case "CSA ARRZEW": equipe_name = "OMA"; break;
+                case "MASCARA": equipe_name = "GCM"; break;
+                case "Sidi Belabbes": equipe_name = "USMBA"; break;
+                case "Hessasna": equipe_name = "MB"; break;
+                case "WAT Tlemcen": equipe_name = "WAT"; break;
+                case "ASM Meghnia": equipe_name = "IRBM"; break;
+                case "Les Etoiles de Tiaret": equipe_name = "NOUDJOUM"; break;
+                default:
+                    equipe_name = name;
+                    break;
+            }
+            return equipe_name;
+        }
         private void evaluation_Load(object sender, EventArgs e)
         {
+            
+          
             rsx = new ResourceManager("language.Resource", typeof(evaluation).Assembly);
             cul = CultureInfo.CreateSpecificCulture("Ar");
             
@@ -54,7 +77,13 @@ namespace FootStat
                     Adresse.Text = db.reader["addresse"].ToString();
                     Equipe.Text = db.reader["equipe"].ToString();
                     JouIMG.ImageLocation = db.reader["img"].ToString();
-                    EquipeIMG.ImageLocation = "Equipes/"+db.reader["equipe"].ToString()+".png";
+                    JouIMG.Width = 159;
+                    JouIMG.Height = 165;
+                    string is1 = "C:/FootTest/Equipes/" + EquipeImg(db.reader["equipe"].ToString()) + ".png";
+                    string is2 = "C:/FootTest/Equipes/" + EquipeImg(db.reader["equipe"].ToString()) + ".jpg";
+                    EquipeIMG.ImageLocation = (File.Exists(is1)) ? is1 : is2;
+                    EquipeIMG.Width = 169;
+                    EquipeIMG.Height = 149;
                 }
                 db.Close();
                 //reaction(double vits,string note)
@@ -64,31 +93,34 @@ namespace FootStat
             
             switch (type)
             {
-                case "Morphologie et Physiologie":
-                    MorphPhys MorPhy = new MorphPhys(this.ID.ToString());
+                case "Morphologique et Physiologique":
+                    label2.Text += " Morphologique \n et Physiologique";
+                    MorphPhys MorPhy = new MorphPhys(this.ID.ToString(), NR);
                     cntEval.Controls.Clear();
                     this.Size = form1.CNTS.Size;
                     
                     cntEval.Controls.Add(MorPhy);
                     break;
                 case "Physique":
-                    EvalPhysique Physique = new EvalPhysique(this.ID.ToString());
+                    label2.Text += " Physique";
+                    EvalPhysique Physique = new EvalPhysique(this.ID.ToString(), NR);
                     cntEval.Controls.Clear();
                     this.Size = form1.CNTS.Size;
                     Physique.Size = cntEval.Size;
                     cntEval.Controls.Add(Physique);
                     break;
                 case "Technique":
-                    //
-                    Technique technique = new Technique(this.ID.ToString());
+                    label2.Text += " Technique";
+                    Technique technique = new Technique(this.ID.ToString(), NR);
                     cntEval.Controls.Clear();
                     this.Size = form1.CNTS.Size;
                     technique.Size = cntEval.Size;
                     cntEval.Controls.Add(technique);
                     //
                     break;
-                case "Tous les types":
-                    AllTests all = new AllTests(this.ID.ToString());
+                case "Performance Totale":
+                    label2.Text += " Totale ";
+                    AllTests all = new AllTests(this.ID.ToString(), NR);
                     cntEval.Controls.Clear();
                     this.Size = form1.CNTS.Size;
                     cntEval.Controls.Add(all);
@@ -97,11 +129,12 @@ namespace FootStat
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {   
+        {
+            printer = new printWords(@"C:\FootTest\Fiches\fch.docx");
             printer.init(ID);
             switch (type)
             {
-                case "Morphologie et Physiologie":
+                case "Morphologique et Physiologique":
                     printer.eval_morphy();
                     break;
                 case "Physique":
@@ -124,7 +157,7 @@ namespace FootStat
             {
                 PrinterName = Printdialog.PrinterSettings.PrinterName;
 
-                ProcessStartInfo info = new ProcessStartInfo(@"C:\Users\MR.CPU\Documents\Visual Studio 2015\Projects\FootStat\FootStat\bin\Debug\fiches2.pdf");
+                ProcessStartInfo info = new ProcessStartInfo(@"C:\FootTest\Fiches\fiches" + ID+".pdf");
             info.Verb = "PrintTo";
             info.Arguments = "\"" + PrinterName + "\"";
             info.CreateNoWindow = true;
@@ -138,7 +171,7 @@ namespace FootStat
             printer.init(ID);
             switch (type)
             {
-                case "Morphologie et Physiologie":
+                case "Morphologique et Physiologique":
                     printer.eval_morphy();
                     break;
                 case "Physique":

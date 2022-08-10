@@ -30,12 +30,14 @@ namespace FootStat
             double result = poid / (newTail * newTail);
             return result;
         }
-        public double cal_BRODIS(double test1, double testN)
+        public double cal_BRODIS(double tests1, double testsN,bool vt = false)
         {
+        
             double BROD;
-            BROD = 100 * (testN - test1);
-            BROD = BROD / (0.5 * (test1+testN));
-            return BROD; // par %
+            BROD = (vt == false ) ? 100 * (testsN - tests1): 100 * (tests1 - testsN);
+            BROD = BROD / (0.5 * (tests1 + testsN));
+            
+            return Math.Round(BROD,2); // par %
         }
     }
 }

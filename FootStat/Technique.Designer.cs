@@ -68,6 +68,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.slaOBS = new System.Windows.Forms.Label();
+            this.jngOBS = new System.Windows.Forms.Label();
+            this.cntOBS = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabl.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -107,7 +111,7 @@
             this.tabl.Controls.Add(this.panel2, 1, 0);
             this.tabl.Controls.Add(this.panel3, 0, 0);
             this.tabl.Controls.Add(this.panel4, 0, 1);
-            this.tabl.Location = new System.Drawing.Point(20, 19);
+            this.tabl.Location = new System.Drawing.Point(54, 119);
             this.tabl.Name = "tabl";
             this.tabl.RowCount = 5;
             this.tabl.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -115,7 +119,7 @@
             this.tabl.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tabl.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tabl.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tabl.Size = new System.Drawing.Size(489, 400);
+            this.tabl.Size = new System.Drawing.Size(563, 336);
             this.tabl.TabIndex = 10;
             // 
             // panel18
@@ -127,10 +131,10 @@
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel18.Controls.Add(this.cord_observ);
             this.panel18.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel18.Location = new System.Drawing.Point(277, 320);
+            this.panel18.Location = new System.Drawing.Point(351, 267);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(212, 80);
+            this.panel18.Size = new System.Drawing.Size(212, 69);
             this.panel18.TabIndex = 18;
             // 
             // cord_observ
@@ -139,10 +143,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cord_observ.AutoSize = true;
-            this.cord_observ.Location = new System.Drawing.Point(80, 25);
+            this.cord_observ.Location = new System.Drawing.Point(74, 26);
             this.cord_observ.Name = "cord_observ";
-            this.cord_observ.Size = new System.Drawing.Size(0, 21);
+            this.cord_observ.Size = new System.Drawing.Size(55, 21);
             this.cord_observ.TabIndex = 1;
+            this.cord_observ.Text = "Faible";
             // 
             // panel17
             // 
@@ -153,10 +158,10 @@
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel17.Controls.Add(this.cord);
             this.panel17.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel17.Location = new System.Drawing.Point(165, 320);
+            this.panel17.Location = new System.Drawing.Point(239, 267);
             this.panel17.Margin = new System.Windows.Forms.Padding(0);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(112, 80);
+            this.panel17.Size = new System.Drawing.Size(112, 69);
             this.panel17.TabIndex = 17;
             // 
             // cord
@@ -165,10 +170,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cord.AutoSize = true;
-            this.cord.Location = new System.Drawing.Point(47, 26);
+            this.cord.Location = new System.Drawing.Point(39, 26);
             this.cord.Name = "cord";
-            this.cord.Size = new System.Drawing.Size(0, 21);
+            this.cord.Size = new System.Drawing.Size(28, 21);
             this.cord.TabIndex = 1;
+            this.cord.Text = "00";
             // 
             // panel16
             // 
@@ -179,10 +185,10 @@
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel16.Controls.Add(this.label19);
             this.panel16.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel16.Location = new System.Drawing.Point(0, 320);
+            this.panel16.Location = new System.Drawing.Point(0, 267);
             this.panel16.Margin = new System.Windows.Forms.Padding(0);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(165, 80);
+            this.panel16.Size = new System.Drawing.Size(239, 69);
             this.panel16.TabIndex = 16;
             // 
             // label19
@@ -191,7 +197,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(29, 27);
+            this.label19.Location = new System.Drawing.Point(17, 25);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(113, 21);
             this.label19.TabIndex = 1;
@@ -206,10 +212,10 @@
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.serg_observ);
             this.panel12.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel12.Location = new System.Drawing.Point(277, 243);
+            this.panel12.Location = new System.Drawing.Point(351, 200);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(212, 77);
+            this.panel12.Size = new System.Drawing.Size(212, 67);
             this.panel12.TabIndex = 12;
             // 
             // serg_observ
@@ -218,10 +224,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.serg_observ.AutoSize = true;
-            this.serg_observ.Location = new System.Drawing.Point(79, 27);
+            this.serg_observ.Location = new System.Drawing.Point(81, 22);
             this.serg_observ.Name = "serg_observ";
-            this.serg_observ.Size = new System.Drawing.Size(0, 21);
+            this.serg_observ.Size = new System.Drawing.Size(43, 21);
             this.serg_observ.TabIndex = 1;
+            this.serg_observ.Text = "Bien";
             // 
             // panel11
             // 
@@ -232,10 +239,10 @@
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.sergent);
             this.panel11.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel11.Location = new System.Drawing.Point(165, 243);
+            this.panel11.Location = new System.Drawing.Point(239, 200);
             this.panel11.Margin = new System.Windows.Forms.Padding(0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(112, 77);
+            this.panel11.Size = new System.Drawing.Size(112, 67);
             this.panel11.TabIndex = 11;
             // 
             // sergent
@@ -244,10 +251,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.sergent.AutoSize = true;
-            this.sergent.Location = new System.Drawing.Point(43, 29);
+            this.sergent.Location = new System.Drawing.Point(38, 22);
             this.sergent.Name = "sergent";
-            this.sergent.Size = new System.Drawing.Size(0, 21);
+            this.sergent.Size = new System.Drawing.Size(28, 21);
             this.sergent.TabIndex = 1;
+            this.sergent.Text = "00";
             // 
             // panel10
             // 
@@ -258,10 +266,10 @@
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.label17);
             this.panel10.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel10.Location = new System.Drawing.Point(0, 243);
+            this.panel10.Location = new System.Drawing.Point(0, 200);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(165, 77);
+            this.panel10.Size = new System.Drawing.Size(239, 67);
             this.panel10.TabIndex = 10;
             // 
             // label17
@@ -270,11 +278,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(17, 27);
+            this.label17.Location = new System.Drawing.Point(17, 22);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(129, 21);
+            this.label17.Size = new System.Drawing.Size(141, 21);
             this.label17.TabIndex = 1;
-            this.label17.Text = "controlle de ball";
+            this.label17.Text = "Controlle de balle";
             // 
             // panel9
             // 
@@ -285,21 +293,21 @@
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.label16);
             this.panel9.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel9.Location = new System.Drawing.Point(0, 151);
+            this.panel9.Location = new System.Drawing.Point(0, 136);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(165, 92);
+            this.panel9.Size = new System.Drawing.Size(239, 64);
             this.panel9.TabIndex = 9;
             // 
             // label16
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(45, 34);
+            this.label16.Location = new System.Drawing.Point(17, 22);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(69, 21);
+            this.label16.Size = new System.Drawing.Size(216, 21);
             this.label16.TabIndex = 1;
-            this.label16.Text = "Slalome";
+            this.label16.Text = "Conduite de balle (Slalome)";
             // 
             // panel8
             // 
@@ -310,10 +318,10 @@
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.course);
             this.panel8.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel8.Location = new System.Drawing.Point(165, 151);
+            this.panel8.Location = new System.Drawing.Point(239, 136);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(112, 92);
+            this.panel8.Size = new System.Drawing.Size(112, 64);
             this.panel8.TabIndex = 8;
             // 
             // course
@@ -322,10 +330,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.course.AutoSize = true;
-            this.course.Location = new System.Drawing.Point(47, 32);
+            this.course.Location = new System.Drawing.Point(38, 23);
             this.course.Name = "course";
-            this.course.Size = new System.Drawing.Size(0, 21);
+            this.course.Size = new System.Drawing.Size(28, 21);
             this.course.TabIndex = 1;
+            this.course.Text = "00";
             // 
             // panel7
             // 
@@ -336,10 +345,10 @@
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.cour_observ);
             this.panel7.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel7.Location = new System.Drawing.Point(277, 151);
+            this.panel7.Location = new System.Drawing.Point(351, 136);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(212, 92);
+            this.panel7.Size = new System.Drawing.Size(212, 64);
             this.panel7.TabIndex = 7;
             // 
             // cour_observ
@@ -348,10 +357,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cour_observ.AutoSize = true;
-            this.cour_observ.Location = new System.Drawing.Point(81, 34);
+            this.cour_observ.Location = new System.Drawing.Point(64, 23);
             this.cour_observ.Name = "cour_observ";
-            this.cour_observ.Size = new System.Drawing.Size(0, 21);
+            this.cour_observ.Size = new System.Drawing.Size(79, 21);
             this.cour_observ.TabIndex = 1;
+            this.cour_observ.Text = "Moyenne";
             // 
             // panel6
             // 
@@ -362,10 +372,10 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.react_observ);
             this.panel6.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel6.Location = new System.Drawing.Point(277, 62);
+            this.panel6.Location = new System.Drawing.Point(351, 62);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(212, 89);
+            this.panel6.Size = new System.Drawing.Size(212, 74);
             this.panel6.TabIndex = 6;
             // 
             // react_observ
@@ -374,10 +384,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.react_observ.AutoSize = true;
-            this.react_observ.Location = new System.Drawing.Point(80, 30);
+            this.react_observ.Location = new System.Drawing.Point(67, 24);
             this.react_observ.Name = "react_observ";
-            this.react_observ.Size = new System.Drawing.Size(0, 21);
+            this.react_observ.Size = new System.Drawing.Size(73, 21);
             this.react_observ.TabIndex = 1;
+            this.react_observ.Text = "Tré Bien";
             // 
             // panel5
             // 
@@ -388,10 +399,10 @@
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.react);
             this.panel5.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel5.Location = new System.Drawing.Point(165, 62);
+            this.panel5.Location = new System.Drawing.Point(239, 62);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(112, 89);
+            this.panel5.Size = new System.Drawing.Size(112, 74);
             this.panel5.TabIndex = 5;
             // 
             // react
@@ -400,10 +411,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.react.AutoSize = true;
-            this.react.Location = new System.Drawing.Point(47, 31);
+            this.react.Location = new System.Drawing.Point(38, 24);
             this.react.Name = "react";
-            this.react.Size = new System.Drawing.Size(0, 21);
+            this.react.Size = new System.Drawing.Size(28, 21);
             this.react.TabIndex = 1;
+            this.react.Text = "00";
             // 
             // panel1
             // 
@@ -413,7 +425,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label11);
             this.panel1.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel1.Location = new System.Drawing.Point(277, 0);
+            this.panel1.Location = new System.Drawing.Point(351, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(212, 62);
@@ -425,7 +437,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(50, 25);
+            this.label11.Location = new System.Drawing.Point(51, 21);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(101, 21);
             this.label11.TabIndex = 1;
@@ -440,7 +452,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label12);
             this.panel2.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.panel2.Location = new System.Drawing.Point(165, 0);
+            this.panel2.Location = new System.Drawing.Point(239, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(112, 62);
@@ -452,7 +464,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(21, 25);
+            this.label12.Location = new System.Drawing.Point(21, 21);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(69, 21);
             this.label12.TabIndex = 1;
@@ -469,7 +481,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(165, 62);
+            this.panel3.Size = new System.Drawing.Size(239, 62);
             this.panel3.TabIndex = 4;
             // 
             // label10
@@ -478,7 +490,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 25);
+            this.label10.Location = new System.Drawing.Point(3, 21);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(152, 21);
             this.label10.TabIndex = 0;
@@ -495,7 +507,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 62);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(165, 89);
+            this.panel4.Size = new System.Drawing.Size(239, 74);
             this.panel4.TabIndex = 4;
             // 
             // label15
@@ -504,15 +516,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(46, 30);
+            this.label15.Location = new System.Drawing.Point(17, 24);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(73, 21);
+            this.label15.Size = new System.Drawing.Size(85, 21);
             this.label15.TabIndex = 0;
-            this.label15.Text = "Jenglerie";
+            this.label15.Text = "Jonglerie  ";
             // 
             // ContrBar
             // 
-            this.ContrBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ContrBar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ContrBar.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.ContrBar.AnimationSpeed = 500;
             this.ContrBar.BackColor = System.Drawing.Color.Transparent;
@@ -521,7 +533,7 @@
             this.ContrBar.InnerColor = System.Drawing.Color.White;
             this.ContrBar.InnerMargin = 2;
             this.ContrBar.InnerWidth = -1;
-            this.ContrBar.Location = new System.Drawing.Point(841, 19);
+            this.ContrBar.Location = new System.Drawing.Point(1008, 212);
             this.ContrBar.MarqueeAnimationSpeed = 2000;
             this.ContrBar.Maximum = 80;
             this.ContrBar.Name = "ContrBar";
@@ -545,12 +557,12 @@
             // 
             // ContrBarVal
             // 
-            this.ContrBarVal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ContrBarVal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ContrBarVal.AutoSize = true;
-            this.ContrBarVal.BackColor = System.Drawing.Color.White;
+            this.ContrBarVal.BackColor = System.Drawing.Color.Transparent;
             this.ContrBarVal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ContrBarVal.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ContrBarVal.Location = new System.Drawing.Point(906, 86);
+            this.ContrBarVal.Location = new System.Drawing.Point(1074, 188);
             this.ContrBarVal.Name = "ContrBarVal";
             this.ContrBarVal.Size = new System.Drawing.Size(28, 21);
             this.ContrBarVal.TabIndex = 12;
@@ -558,7 +570,7 @@
             // 
             // SlalBar
             // 
-            this.SlalBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SlalBar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SlalBar.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.SlalBar.AnimationSpeed = 500;
             this.SlalBar.BackColor = System.Drawing.Color.Transparent;
@@ -567,7 +579,7 @@
             this.SlalBar.InnerColor = System.Drawing.Color.White;
             this.SlalBar.InnerMargin = 2;
             this.SlalBar.InnerWidth = -1;
-            this.SlalBar.Location = new System.Drawing.Point(841, 231);
+            this.SlalBar.Location = new System.Drawing.Point(817, 212);
             this.SlalBar.MarqueeAnimationSpeed = 2000;
             this.SlalBar.Maximum = 80;
             this.SlalBar.Name = "SlalBar";
@@ -591,12 +603,12 @@
             // 
             // SlalBarVal
             // 
-            this.SlalBarVal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SlalBarVal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SlalBarVal.AutoSize = true;
-            this.SlalBarVal.BackColor = System.Drawing.Color.White;
+            this.SlalBarVal.BackColor = System.Drawing.Color.Transparent;
             this.SlalBarVal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SlalBarVal.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SlalBarVal.Location = new System.Drawing.Point(904, 299);
+            this.SlalBarVal.Location = new System.Drawing.Point(882, 188);
             this.SlalBarVal.Name = "SlalBarVal";
             this.SlalBarVal.Size = new System.Drawing.Size(28, 21);
             this.SlalBarVal.TabIndex = 12;
@@ -604,7 +616,7 @@
             // 
             // JenBar
             // 
-            this.JenBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.JenBar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.JenBar.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.JenBar.AnimationSpeed = 500;
             this.JenBar.BackColor = System.Drawing.Color.Transparent;
@@ -613,7 +625,7 @@
             this.JenBar.InnerColor = System.Drawing.Color.White;
             this.JenBar.InnerMargin = 2;
             this.JenBar.InnerWidth = -1;
-            this.JenBar.Location = new System.Drawing.Point(649, 125);
+            this.JenBar.Location = new System.Drawing.Point(632, 212);
             this.JenBar.MarqueeAnimationSpeed = 3000;
             this.JenBar.Maximum = 80;
             this.JenBar.Name = "JenBar";
@@ -637,12 +649,12 @@
             // 
             // JenBarVal
             // 
-            this.JenBarVal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.JenBarVal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.JenBarVal.AutoSize = true;
-            this.JenBarVal.BackColor = System.Drawing.Color.White;
+            this.JenBarVal.BackColor = System.Drawing.Color.Transparent;
             this.JenBarVal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.JenBarVal.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JenBarVal.Location = new System.Drawing.Point(715, 192);
+            this.JenBarVal.Location = new System.Drawing.Point(699, 188);
             this.JenBarVal.Name = "JenBarVal";
             this.JenBarVal.Size = new System.Drawing.Size(28, 21);
             this.JenBarVal.TabIndex = 12;
@@ -650,46 +662,98 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(851, 174);
+            this.label1.Location = new System.Drawing.Point(1016, 374);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 21);
+            this.label1.Size = new System.Drawing.Size(141, 21);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Controlle de Ball";
+            this.label1.Text = "Controlle de balle";
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(896, 385);
+            this.label2.Location = new System.Drawing.Point(830, 374);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 21);
+            this.label2.Size = new System.Drawing.Size(140, 21);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Slalome";
+            this.label2.Text = "Conduite de balle";
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(692, 287);
+            this.label3.Location = new System.Drawing.Point(675, 374);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 21);
+            this.label3.Size = new System.Drawing.Size(85, 21);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Jenglerie";
+            this.label3.Text = "Jonglerie  ";
+            // 
+            // slaOBS
+            // 
+            this.slaOBS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.slaOBS.AutoSize = true;
+            this.slaOBS.BackColor = System.Drawing.Color.White;
+            this.slaOBS.Font = new System.Drawing.Font("Times New Roman", 14.25F);
+            this.slaOBS.Location = new System.Drawing.Point(860, 279);
+            this.slaOBS.Name = "slaOBS";
+            this.slaOBS.Size = new System.Drawing.Size(73, 21);
+            this.slaOBS.TabIndex = 1;
+            this.slaOBS.Text = "Tré Bien";
+            // 
+            // jngOBS
+            // 
+            this.jngOBS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.jngOBS.AutoSize = true;
+            this.jngOBS.BackColor = System.Drawing.Color.White;
+            this.jngOBS.Font = new System.Drawing.Font("Times New Roman", 14.25F);
+            this.jngOBS.Location = new System.Drawing.Point(673, 278);
+            this.jngOBS.Name = "jngOBS";
+            this.jngOBS.Size = new System.Drawing.Size(79, 21);
+            this.jngOBS.TabIndex = 1;
+            this.jngOBS.Text = "Moyenne";
+            // 
+            // cntOBS
+            // 
+            this.cntOBS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cntOBS.AutoSize = true;
+            this.cntOBS.BackColor = System.Drawing.Color.White;
+            this.cntOBS.Font = new System.Drawing.Font("Times New Roman", 14.25F);
+            this.cntOBS.Location = new System.Drawing.Point(1061, 278);
+            this.cntOBS.Name = "cntOBS";
+            this.cntOBS.Size = new System.Drawing.Size(43, 21);
+            this.cntOBS.TabIndex = 1;
+            this.cntOBS.Text = "Bien";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(857, 395);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 21);
+            this.label4.TabIndex = 12;
+            this.label4.Text = " (Slalome)";
             // 
             // Technique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cntOBS);
+            this.Controls.Add(this.jngOBS);
+            this.Controls.Add(this.slaOBS);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.JenBarVal);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.SlalBarVal);
             this.Controls.Add(this.label1);
@@ -699,7 +763,7 @@
             this.Controls.Add(this.ContrBar);
             this.Controls.Add(this.tabl);
             this.Name = "Technique";
-            this.Size = new System.Drawing.Size(1093, 589);
+            this.Size = new System.Drawing.Size(1195, 589);
             this.Load += new System.EventHandler(this.Technique_Load);
             this.tabl.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
@@ -778,5 +842,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label slaOBS;
+        private System.Windows.Forms.Label jngOBS;
+        private System.Windows.Forms.Label cntOBS;
+        private System.Windows.Forms.Label label4;
     }
 }

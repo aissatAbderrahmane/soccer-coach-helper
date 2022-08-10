@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace FootStat
 {
@@ -15,9 +16,11 @@ namespace FootStat
         private int ID;
         private StoreData db = new StoreData();
         private Calcules cal = new Calcules();
-        private double[] test1, testn;
+        private double[] test1 = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        private double[] testn = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public Brodi()
         {
+            System.Reflection.Assembly asm = System.Reflection.Assembly.GetExecutingAssembly();
             InitializeComponent();
         }//cal_BRODIS(double test1, double testN)
 
@@ -44,76 +47,112 @@ namespace FootStat
                 if (tn >= 2) { 
                     for (i = 2; i <= tn; i++)
                         NTESTS.Items.Add("test1-test" + i);
+                   
                     int.TryParse(ID_V.Text, out ID);
+                    NTESTS.Enabled = true;
                 }
                 else MessageBox.Show("Ce Joueur n'a pas enore fait 2 test ou plus !");
             } else MessageBox.Show("Ce Joueur N'exist Pas !");
         }
-        private void initGraph()
+        private void initGraph(string X, double Y,int n,int tr,bool brds = false)
         {
             //Brodi_Graph
-            db.Connect();
+            Series srs = Brodi_Graph.Series[tr] ;
+            if (brds == true) srs.ChartType = SeriesChartType.Radar;
+            srs.IsValueShownAsLabel = true;
+            
+            srs.Points.AddXY(X, Y);
+            srs.IsValueShownAsLabel = true;
+           
         }
 
      
 
         private void NTESTS_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int n;
-            switch (NTESTS.SelectedText)
+            
+            switch (NTESTS.SelectedItem.ToString())
             {
                 case "test1-test2":
                     addVal(2);
+                    label11.Text += " " + 2;
                     break;
                 case "test1-test3":
                     addVal(3);
+                    label11.Text += " " + 3;
                     break;
                 case "test1-test4":
                     addVal(4);
-                    break;
-
+                    label11.Text += " " + 4;
+                    break;//
+                
             }
             
 
         }
+        private void initValGR(Label R1, Label R2, Label R3, string X, bool brF)
+        {
+            double s1, s2, s3;
+            double.TryParse(R1.Text, out s1);
+            double.TryParse(R2.Text, out s2);
+            R3.Text = cal.cal_BRODIS(s1, s2, brF).ToString();
+            double.TryParse(R3.Text, out s3);
+            initGraph(X, s1, 0, 0);
+            initGraph(X, s2, 1, 1);
+            initGraph(X, s3, 2, 2);
+        }
         private void addVal(int n2)
         {
-                Morphologie(ID, 1); Physique(ID, 1);
+            Physique(ID, 1);
+            Morphologie(ID, 1);
+            
             test1 = testn;
-            react1.Text = test1[0].ToString();
-            course1.Text = test1[1].ToString();
-            serg1.Text = test1[2].ToString();
-            soupl1.Text = test1[3].ToString();
-            cord1.Text = test1[4].ToString();
-            taill1.Text = test1[5].ToString();
-            poid1.Text = test1[6].ToString();
-            imc1.Text = test1[7].ToString();
-            vo1.Text = test1[8].ToString();
-                 Morphologie(ID, n2); Physique(ID, n2);
-            react1.Text = testn[0].ToString();
-            course1.Text = testn[1].ToString();
-            serg1.Text = testn[2].ToString();
-            soupl1.Text = testn[3].ToString();
-            cord1.Text = testn[4].ToString();
-            taill1.Text = testn[5].ToString();
-            poid1.Text = testn[6].ToString();
-            imc1.Text = testn[7].ToString();
-            vo1.Text = testn[8].ToString();
+            react1.Text = Math.Round(test1[0],2).ToString();
+            course1.Text = Math.Round(test1[1], 2).ToString();
+            serg1.Text = Math.Round(test1[2], 2).ToString();
+            soupl1.Text = Math.Round(test1[3], 2).ToString();
+            cord1.Text = Math.Round(test1[4], 2).ToString();
+            taill1.Text = Math.Round(test1[5], 2).ToString();
+            poid1.Text = Math.Round(test1[6], 2).ToString();
+            imc1.Text = Math.Round(test1[7], 2).ToString();
+            vo1.Text = Math.Round(test1[8], 2).ToString();
+
+            Physique(ID, n2); Morphologie(ID, n2); 
+
+            react2.Text = Math.Round(testn[0], 2).ToString();
+            course2.Text = Math.Round(testn[1], 2).ToString();
+            serg2.Text = Math.Round(testn[2], 2).ToString();
+            soupl2.Text = Math.Round(testn[3], 2).ToString();
+            cord2.Text = Math.Round(testn[4], 2).ToString();
+            taill2.Text = Math.Round(testn[5], 2).ToString();
+            poid2.Text = Math.Round(testn[6], 2).ToString();
+            imc2.Text = Math.Round(testn[7], 2).ToString();
+            vo2.Text = Math.Round(testn[8], 2).ToString();
             ///
-            reactPR.Text = cal.cal_BRODIS(test1[0], testn[0]).ToString();
-            coursePR.Text = cal.cal_BRODIS(test1[1], testn[1]).ToString();
-            sergPR.Text = cal.cal_BRODIS(test1[2], testn[2]).ToString();
-            souplPR.Text = cal.cal_BRODIS(test1[3], testn[3]).ToString();
-            cordPR.Text = cal.cal_BRODIS(test1[4], testn[4]).ToString();
-            taillPR.Text = cal.cal_BRODIS(test1[5], testn[5]).ToString();
-            poidPR.Text = cal.cal_BRODIS(test1[6], testn[6]).ToString();
-            imcPR.Text = cal.cal_BRODIS(test1[7], testn[7]).ToString();
-            voPR.Text = cal.cal_BRODIS(test1[8], testn[8]).ToString();
+            Brodi_Graph.Series[0].Points.Clear();
+            Brodi_Graph.Series[1].Points.Clear();
+            Brodi_Graph.Series[2].Points.Clear();
+            initValGR(taill1, taill2, taillPR, "Taille", false);
+            initValGR(poid1, poid2, poidPR,"Pois", false);
+            initValGR(imc1, imc2, imcPR, "IMC", false);
+            initValGR(react1, react2, reactPR, "V.Reaction", true);
+            initValGR(course1, course2, coursePR, "V.Course", true);
+            initValGR(soupl1, soupl2, souplPR, "Souplesse", false);
+            initValGR(cord1, cord2, cordPR, "Cordination", false);
+            initValGR(serg1, serg2, sergPR, "Sergent", false);
+            initValGR(vo1, vo2, voPR, "Vo2max", false);
+            Color color0 = Brodi_Graph.Series[0].Color;
+            Color color1 = Brodi_Graph.Series[1].Color;
+            Color color2 = Brodi_Graph.Series[2].Color;
+            Brodi_Graph.Series[0].Color = Color.FromArgb(128, color0);
+            Brodi_Graph.Series[1].Color = Color.FromArgb(128, color1);
+            Brodi_Graph.Series[2].Color = Color.FromArgb(128, color2);
         }
         private void Physique(int id, int N) {
             //{ "react", "cours", "serg", "soupl", "cord", "dist", "total", "jou", "nume" };
+
             db.Connect();
-            db.exec(db.select("physique","","jou="+id+" and num="+N+" "));
+            db.getData(db.select("physique","","jou="+id+" and nume="+N+" "));
             while (db.reader.Read())
             {
                 double.TryParse(db.reader["react"].ToString(),out testn[0]);
@@ -126,8 +165,9 @@ namespace FootStat
         }
         private void Morphologie(int id, int N)
         {//"taill", "poid", "imc", "total", "jou", "nume"
+ 
             db.Connect();
-            db.exec(db.select("morphologie", "", "jou=" + id + " and num="+N+" "));
+            db.getData(db.select("morphologie", "", "jou=" + id + " and nume="+N+" "));
             while (db.reader.Read())
             {
                 double.TryParse(db.reader["taill"].ToString(), out testn[5]);
@@ -136,7 +176,7 @@ namespace FootStat
             }
             db.Close();
             db.Connect();
-            db.exec(db.select("physiologique", "", "jou=" + id + " and num=" + N + " "));
+            db.getData(db.select("physiologique", "", "jou=" + id + " and nume=" + N + " "));
             while (db.reader.Read())
             {
                 double.TryParse(db.reader["vo2max"].ToString(), out testn[8]);

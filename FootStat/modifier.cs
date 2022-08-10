@@ -18,6 +18,7 @@ namespace FootStat
         protected Calcules calculator = new Calcules();
         public modifier(string id)
         {
+            System.Reflection.Assembly asm = System.Reflection.Assembly.GetExecutingAssembly();
             InitializeComponent();
             ID_V.Text = id;
             ID = id;
@@ -41,7 +42,7 @@ namespace FootStat
             db.Close();
             //TALL_V,POID_V
             db.Connect();
-            db.getData(db.select("morphologie", "", "jou=" + ID + " "));
+            db.getData(db.select("morphologie", "", "nume=" + ID + " "));
             while (db.reader.Read())
             {
                 TALL_V.Text = db.reader["taill"].ToString();
@@ -68,7 +69,7 @@ namespace FootStat
             smT = sm1 + sm2;
             db.Connect();
             db.exec(db.update("joueur", "addresse='"+ ADR_V.Text + "' and numero='"+ TEL_V.Text + "'", "ID="+ID+" "));
-            db.exec(db.update("morphologie", "taill='" + valTAL + "' and poid='" + valPOI + "' and imc='"+ valIMC + "' and total="+ smT + " ", "jou=" + ID + " "));
+            db.exec(db.update("morphologie", "taill='" + valTAL + "' and poid='" + valPOI + "' and imc='"+ valIMC + "' and total="+ smT + " ", "nume=" + ID + " "));
             db.Close();
         }
 

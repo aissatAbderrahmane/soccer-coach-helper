@@ -8,10 +8,13 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FootStat</RootNamespace>
-    <AssemblyName>FootStat</AssemblyName>
+    <AssemblyName>FootTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,22 +27,21 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\Desktop\FootStat\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -47,9 +49,48 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Soccer_Ball_copie %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>FootStat.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ButtonME">
+      <HintPath>bin\Debug\ButtonME.dll</HintPath>
+    </Reference>
     <Reference Include="CircularProgressBar">
       <HintPath>..\packages\CircularProgressBar.2.5.6403.13419\lib\net35-client\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
@@ -65,15 +106,74 @@
     <Reference Include="microsoft.msxml, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel">
+      <HintPath>..\..\..\..\..\Downloads\Microsoft.Office.Tools.Excel\Microsoft.Office.Tools.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Microsoft.Workflow.Compiler, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Spire.Barcode, Version=1.4.0.16040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.2.15\lib\net40\Spire.Barcode.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.DataExport, Version=3.5.135.15040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.2.15\lib\net40\Spire.DataExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.DataExport.ResourceMgr, Version=1.6.20.4040, Culture=neutral, PublicKeyToken=4bc1500157862925, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.2.15\lib\net40\Spire.DataExport.ResourceMgr.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.Doc, Version=5.9.8.15040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.2.15\lib\net40\Spire.Doc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.DocViewer.Forms, Version=2.4.1.15040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.2.15\lib\net40\Spire.DocViewer.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.6.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.2.15\lib\net40\Spire.License.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=3.9.99.15040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.2.15\lib\net40\Spire.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Forms, Version=2.11.46.15340, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.2.15\lib\net40\Spire.PdfViewer.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.Presentation, Version=2.8.5.15040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.2.15\lib\net40\Spire.Presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.XLS, Version=7.12.14.15040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.2.15\lib\net40\Spire.XLS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.105.2\lib\net451\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.105.2\lib\net451\System.Data.SQLite.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.105.2\lib\net451\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Design" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -84,12 +184,12 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Serialization" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
     <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="WpfControlLibrary1">
-      <HintPath>..\..\WindowsFormsApplication2\WpfControlLibrary1\bin\Debug\WpfControlLibrary1.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -130,17 +230,16 @@
     <Compile Include="Fiches.Designer.cs">
       <DependentUpon>Fiches.cs</DependentUpon>
     </Compile>
+    <Compile Include="FileSources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FileSources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="guide.cs">
       <SubType>UserControl</SubType>
@@ -148,11 +247,35 @@
     <Compile Include="guide.Designer.cs">
       <DependentUpon>guide.cs</DependentUpon>
     </Compile>
+    <Compile Include="Guide_morpho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Guide_morpho.Designer.cs">
+      <DependentUpon>Guide_morpho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guide_Phy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Guide_Phy.Designer.cs">
+      <DependentUpon>Guide_Phy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guide_Tech.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Guide_Tech.Designer.cs">
+      <DependentUpon>Guide_Tech.cs</DependentUpon>
+    </Compile>
     <Compile Include="listJoeur.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="listJoeur.Designer.cs">
       <DependentUpon>listJoeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
     </Compile>
     <Compile Include="modifier.cs">
       <SubType>UserControl</SubType>
@@ -169,6 +292,11 @@
     <Compile Include="printWords.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Recherche.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -206,17 +334,30 @@
     <EmbeddedResource Include="Fiches.resx">
       <DependentUpon>Fiches.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FileSources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FileSources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="guide.resx">
       <DependentUpon>guide.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Guide_morpho.resx">
+      <DependentUpon>Guide_morpho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guide_Phy.resx">
+      <DependentUpon>Guide_Phy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guide_Tech.resx">
+      <DependentUpon>Guide_Tech.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="listJoeur.resx">
       <DependentUpon>listJoeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modifier.resx">
       <DependentUpon>modifier.cs</DependentUpon>
@@ -225,15 +366,10 @@
       <DependentUpon>MorphPhys.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Recherche.resx">
       <DependentUpon>Recherche.cs</DependentUpon>
     </EmbeddedResource>
@@ -267,7 +403,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 et x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -280,55 +416,13 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ajouter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ajouter1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Evaluation.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fiches.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\recherche.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Reccherche.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\guide.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\home.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Arrow-left-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Actions-document-print-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pdf-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\printer-icon %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pdf-icon1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pdf-icon2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\printer-icon %281%291.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\printer-icon %281%292.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\soccer-icon %281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\basket-full.png" />
@@ -337,34 +431,7 @@
     <None Include="Resources\chart-bar-chart-icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\Left.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\bottom.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\bottoms.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\joueurs\Ajouters.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ajouters.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\9J2wqF4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gass.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gass1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gass2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gass3.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wallpaper-football-2 copie.jpg" />
@@ -373,40 +440,28 @@
     <None Include="Resources\wallpaper-football-2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\jNaJ8Ny.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\jNaJ822222.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\thumb-1920-opie.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\thumb-1920-opie1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\thumb-1920-516154.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sans titre-1 copie.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sans titre-1 copie1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Left copie.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lefssss.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Action-exit-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <COMReference Include="AdobePDFMakerForOffice">
+      <Guid>{EA8D486A-09E6-411F-B452-78F075ACC8CC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
     <COMReference Include="Microsoft.Office.Core">
       <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
       <VersionMajor>2</VersionMajor>
       <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>primary</WrapperTool>
       <Isolated>False</Isolated>
@@ -435,63 +490,44 @@
     <None Include="Resources\grass-background-hd-1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sans titre-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FINALS.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FINALS1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FINALS2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FINALS3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\re-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ufuyguyh.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ijjll.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ends.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sans titre-3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ajouter2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ajouter3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\acceuls.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SMA-21.png" />
-    <None Include="Resources\SMA-25_PNG_High_Small_grande1.png" />
+    <None Include="Resources\Untitled-1.jpg" />
+    <None Include="Resources\labopaps.png" />
+    <Content Include="Resources\imc.png" />
+    <Content Include="Resources\IMCS.png" />
+    <Content Include="Soccer_Ball_copie %281%29.ico" />
+    <None Include="Resources\phyA1.png" />
+    <None Include="Resources\phyA.png" />
+    <None Include="Resources\soccer_4.png" />
+    <None Include="Resources\xlsx-win-icon.png" />
+    <None Include="Resources\Refuser.gif" />
+    <None Include="Resources\vo2.png" />
+    <None Include="Resources\serg.png" />
+    <None Include="Resources\soccer_field_311115.gif" />
+    <None Include="Resources\NEWAcceuim.jpg" />
+    <None Include="Resources\Soccer Field Wallpaper Hd 29323 Hd Wallpapers in Football - Telusers. copie.PNG" />
     <None Include="Resources\WZjZK0Q.jpg" />
-    <None Include="Resources\SCH.png" />
-    <None Include="Resources\SMA-25_PNG_High_Small_grande.png" />
-    <None Include="Resources\SMA-2.png" />
     <None Include="Resources\grass-background-hd-1.bmp" />
-    <None Include="Resources\AC1.jpg" />
-    <None Include="Resources\AC2.png" />
-    <None Include="Resources\AJ.png" />
-    <None Include="Resources\EVS.png" />
-    <None Include="Resources\GD.png" />
-    <None Include="Resources\BRD.png" />
-    <None Include="Resources\eval.jpg" />
-    <None Include="Resources\1_153637865_n.jpg" />
+    <None Include="Resources\football-goal.png" />
+    <Content Include="b_1302940661180.ico" />
+    <None Include="Resources\cntb.png" />
+    <None Include="Resources\flashpro.png" />
+    <None Include="Resources\fsgs.png" />
+    <None Include="Resources\fsesssssgs.png" />
+    <None Include="Resources\eassas.png" />
+    <None Include="Resources\DET.png" />
     <Content Include="Resources\grassss.bmp" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -9,16 +9,20 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Default = Debug|Default
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
 		Release|Default = Release|Default
+		Release|x86 = Release|x86
 		Description = Created By Aissat Abderrahmane Kaddour : Ahmed.3abdolah@gmail.com | 0796776140
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0F408818-52E1-426D-85D0-80727FDE94C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F408818-52E1-426D-85D0-80727FDE94C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F408818-52E1-426D-85D0-80727FDE94C7}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{0F408818-52E1-426D-85D0-80727FDE94C7}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{0F408818-52E1-426D-85D0-80727FDE94C7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F408818-52E1-426D-85D0-80727FDE94C7}.Release|Default.ActiveCfg = Debug|Any CPU
+		{0F408818-52E1-426D-85D0-80727FDE94C7}.Release|x86.ActiveCfg = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,15 +30,28 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Default = Debug|Default
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
 		Release|Default = Release|Default
+		Release|x86 = Release|x86
 		Description = Created By Aissat Abderrahmane Kaddour : Ahmed.3abdolah@gmail.com | 0796776140
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Default = Debug|Default
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
 		Release|Default = Release|Default
+		Release|x86 = Release|x86
+		Description = Created By Aissat Abderrahmane Kaddour : Ahmed.3abdolah@gmail.com | 0796776140
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+		Release|x86 = Release|x86
 		Description = Created By Aissat Abderrahmane Kaddour : Ahmed.3abdolah@gmail.com | 0796776140
 	EndGlobalSection
 EndGlobal

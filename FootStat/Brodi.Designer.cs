@@ -31,12 +31,9 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.Brodi_Graph = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ID_V = new System.Windows.Forms.TextBox();
-            this.NTESTS = new System.Windows.Forms.ComboBox();
             this.tabl = new System.Windows.Forms.TableLayoutPanel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.imc2 = new System.Windows.Forms.Label();
@@ -71,7 +68,9 @@
             this.panel16 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.course1 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.course2 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.react2 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -117,10 +116,12 @@
             this.panel41 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.course2 = new System.Windows.Forms.Label();
-            this.course1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ID_V = new System.Windows.Forms.TextBox();
+            this.NTESTS = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Brodi_Graph)).BeginInit();
-            this.panel1.SuspendLayout();
             this.tabl.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -162,95 +163,58 @@
             this.panel39.SuspendLayout();
             this.panel40.SuspendLayout();
             this.panel41.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Brodi_Graph
             // 
-            this.Brodi_Graph.BackColor = System.Drawing.Color.Gainsboro;
-            this.Brodi_Graph.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
-            chartArea1.Area3DStyle.Enable3D = true;
+            this.Brodi_Graph.BackColor = System.Drawing.Color.Transparent;
+            this.Brodi_Graph.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
+            this.Brodi_Graph.BorderlineWidth = 3;
             chartArea1.Name = "ChartArea1";
+            chartArea1.ShadowColor = System.Drawing.Color.Transparent;
             this.Brodi_Graph.ChartAreas.Add(chartArea1);
+            legend1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             legend1.Name = "Legend1";
             this.Brodi_Graph.Legends.Add(legend1);
             this.Brodi_Graph.Location = new System.Drawing.Point(547, 177);
             this.Brodi_Graph.Margin = new System.Windows.Forms.Padding(5);
             this.Brodi_Graph.Name = "Brodi_Graph";
+            this.Brodi_Graph.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            series1.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series1.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series1.BorderColor = System.Drawing.Color.Red;
+            series1.BorderWidth = 2;
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            series1.LabelForeColor = System.Drawing.Color.Red;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "Test 1 ";
+            series2.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            series2.BorderWidth = 2;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            series2.LabelForeColor = System.Drawing.Color.Green;
+            series2.Legend = "Legend1";
+            series2.Name = "Test N";
+            series3.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series3.BorderColor = System.Drawing.Color.Orange;
+            series3.BorderWidth = 2;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
+            series3.Color = System.Drawing.Color.Khaki;
+            series3.LabelForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            series3.Legend = "Legend1";
+            series3.Name = "Brodi";
             this.Brodi_Graph.Series.Add(series1);
+            this.Brodi_Graph.Series.Add(series2);
+            this.Brodi_Graph.Series.Add(series3);
             this.Brodi_Graph.Size = new System.Drawing.Size(795, 420);
             this.Brodi_Graph.TabIndex = 5;
             this.Brodi_Graph.Text = "chart1";
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::FootStat.Properties.Resources._1_153637865_n;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.ID_V);
-            this.panel1.Controls.Add(this.NTESTS);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1383, 156);
-            this.panel1.TabIndex = 7;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("BigNoodleTitling", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Green;
-            this.label9.Location = new System.Drawing.Point(81, 15);
-            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 41);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Brodi";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(40, 61);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 21);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "ID";
-            // 
-            // ID_V
-            // 
-            this.ID_V.Location = new System.Drawing.Point(84, 61);
-            this.ID_V.Margin = new System.Windows.Forms.Padding(5);
-            this.ID_V.Name = "ID_V";
-            this.ID_V.Size = new System.Drawing.Size(216, 29);
-            this.ID_V.TabIndex = 3;
-            this.ID_V.TextChanged += new System.EventHandler(this.ID_V_TextChanged);
-            // 
-            // NTESTS
-            // 
-            this.NTESTS.Enabled = false;
-            this.NTESTS.FormattingEnabled = true;
-            this.NTESTS.Items.AddRange(new object[] {
-            "par le nombre des tests"});
-            this.NTESTS.Location = new System.Drawing.Point(83, 100);
-            this.NTESTS.Margin = new System.Windows.Forms.Padding(5);
-            this.NTESTS.Name = "NTESTS";
-            this.NTESTS.Size = new System.Drawing.Size(217, 29);
-            this.NTESTS.TabIndex = 4;
-            this.NTESTS.Text = "Brodi";
-            this.NTESTS.SelectedIndexChanged += new System.EventHandler(this.NTESTS_SelectedIndexChanged);
             // 
             // tabl
             // 
@@ -337,11 +301,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.imc2.AutoSize = true;
-            this.imc2.Location = new System.Drawing.Point(39, 13);
+            this.imc2.Location = new System.Drawing.Point(49, 13);
             this.imc2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.imc2.Name = "imc2";
             this.imc2.Size = new System.Drawing.Size(0, 15);
             this.imc2.TabIndex = 1;
+            this.imc2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel11
             // 
@@ -363,11 +328,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.imc1.AutoSize = true;
-            this.imc1.Location = new System.Drawing.Point(40, 13);
+            this.imc1.Location = new System.Drawing.Point(48, 13);
             this.imc1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.imc1.Name = "imc1";
             this.imc1.Size = new System.Drawing.Size(0, 15);
             this.imc1.TabIndex = 1;
+            this.imc1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel10
             // 
@@ -389,7 +355,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(52, 13);
+            this.label17.Location = new System.Drawing.Point(42, 13);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(31, 15);
@@ -414,12 +380,12 @@
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(51, 14);
+            this.label16.Location = new System.Drawing.Point(42, 14);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(31, 15);
+            this.label16.Size = new System.Drawing.Size(37, 15);
             this.label16.TabIndex = 1;
-            this.label16.Text = "Poid";
+            this.label16.Text = "Poids";
             // 
             // panel8
             // 
@@ -441,11 +407,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.poid1.AutoSize = true;
-            this.poid1.Location = new System.Drawing.Point(40, 13);
+            this.poid1.Location = new System.Drawing.Point(48, 14);
             this.poid1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.poid1.Name = "poid1";
             this.poid1.Size = new System.Drawing.Size(0, 15);
             this.poid1.TabIndex = 1;
+            this.poid1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel7
             // 
@@ -467,11 +434,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.poid2.AutoSize = true;
-            this.poid2.Location = new System.Drawing.Point(37, 13);
+            this.poid2.Location = new System.Drawing.Point(49, 14);
             this.poid2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.poid2.Name = "poid2";
             this.poid2.Size = new System.Drawing.Size(0, 15);
             this.poid2.TabIndex = 1;
+            this.poid2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
             // 
@@ -493,11 +461,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.taill2.AutoSize = true;
-            this.taill2.Location = new System.Drawing.Point(43, 13);
+            this.taill2.Location = new System.Drawing.Point(49, 13);
             this.taill2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.taill2.Name = "taill2";
             this.taill2.Size = new System.Drawing.Size(0, 15);
             this.taill2.TabIndex = 1;
+            this.taill2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
             // 
@@ -519,11 +488,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.taill1.AutoSize = true;
-            this.taill1.Location = new System.Drawing.Point(40, 13);
+            this.taill1.Location = new System.Drawing.Point(48, 13);
             this.taill1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.taill1.Name = "taill1";
             this.taill1.Size = new System.Drawing.Size(0, 15);
             this.taill1.TabIndex = 1;
+            this.taill1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -623,12 +593,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(51, 10);
+            this.label15.Location = new System.Drawing.Point(42, 13);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(32, 15);
+            this.label15.Size = new System.Drawing.Size(38, 15);
             this.label15.TabIndex = 0;
-            this.label15.Text = "Taill";
+            this.label15.Text = "Taille";
             // 
             // panel19
             // 
@@ -677,11 +647,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.soupl1.AutoSize = true;
-            this.soupl1.Location = new System.Drawing.Point(40, 13);
+            this.soupl1.Location = new System.Drawing.Point(48, 13);
             this.soupl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.soupl1.Name = "soupl1";
             this.soupl1.Size = new System.Drawing.Size(0, 15);
             this.soupl1.TabIndex = 1;
+            this.soupl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel21
             // 
@@ -703,11 +674,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.soupl2.AutoSize = true;
-            this.soupl2.Location = new System.Drawing.Point(37, 13);
+            this.soupl2.Location = new System.Drawing.Point(49, 13);
             this.soupl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.soupl2.Name = "soupl2";
             this.soupl2.Size = new System.Drawing.Size(0, 15);
             this.soupl2.TabIndex = 1;
+            this.soupl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel16
             // 
@@ -728,12 +700,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 10);
+            this.label5.Location = new System.Drawing.Point(9, 10);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 15);
+            this.label5.Size = new System.Drawing.Size(103, 15);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Vitesse de course  ";
+            this.label5.Text = "Vitesse de course";
             // 
             // panel17
             // 
@@ -748,6 +720,19 @@
             this.panel17.Size = new System.Drawing.Size(126, 40);
             this.panel17.TabIndex = 10;
             // 
+            // course1
+            // 
+            this.course1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.course1.AutoSize = true;
+            this.course1.Location = new System.Drawing.Point(48, 13);
+            this.course1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.course1.Name = "course1";
+            this.course1.Size = new System.Drawing.Size(0, 15);
+            this.course1.TabIndex = 1;
+            this.course1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel18
             // 
             this.panel18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -760,6 +745,19 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(126, 40);
             this.panel18.TabIndex = 10;
+            // 
+            // course2
+            // 
+            this.course2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.course2.AutoSize = true;
+            this.course2.Location = new System.Drawing.Point(49, 13);
+            this.course2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.course2.Name = "course2";
+            this.course2.Size = new System.Drawing.Size(0, 15);
+            this.course2.TabIndex = 1;
+            this.course2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel14
             // 
@@ -781,11 +779,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.react2.AutoSize = true;
-            this.react2.Location = new System.Drawing.Point(39, 13);
+            this.react2.Location = new System.Drawing.Point(49, 13);
             this.react2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.react2.Name = "react2";
             this.react2.Size = new System.Drawing.Size(0, 15);
             this.react2.TabIndex = 1;
+            this.react2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel15
             // 
@@ -807,11 +806,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.react1.AutoSize = true;
-            this.react1.Location = new System.Drawing.Point(40, 13);
+            this.react1.Location = new System.Drawing.Point(48, 13);
             this.react1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.react1.Name = "react1";
             this.react1.Size = new System.Drawing.Size(0, 15);
             this.react1.TabIndex = 1;
+            this.react1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel22
             // 
@@ -838,7 +838,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(114, 15);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Vitesse de reaction ";
+            this.label7.Text = "Vitesse de réaction ";
             // 
             // panel23
             // 
@@ -860,12 +860,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 12);
+            this.label3.Location = new System.Drawing.Point(25, 13);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 15);
+            this.label3.Size = new System.Drawing.Size(78, 15);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Cordination";
+            this.label3.Text = "Coordination";
             // 
             // panel24
             // 
@@ -887,11 +887,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cord1.AutoSize = true;
-            this.cord1.Location = new System.Drawing.Point(40, 13);
+            this.cord1.Location = new System.Drawing.Point(48, 13);
             this.cord1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cord1.Name = "cord1";
             this.cord1.Size = new System.Drawing.Size(0, 15);
             this.cord1.TabIndex = 1;
+            this.cord1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel25
             // 
@@ -913,11 +914,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cord2.AutoSize = true;
-            this.cord2.Location = new System.Drawing.Point(37, 13);
+            this.cord2.Location = new System.Drawing.Point(49, 13);
             this.cord2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cord2.Name = "cord2";
             this.cord2.Size = new System.Drawing.Size(0, 15);
             this.cord2.TabIndex = 1;
+            this.cord2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel26
             // 
@@ -939,12 +941,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(32, 14);
+            this.label8.Location = new System.Drawing.Point(19, 13);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 15);
+            this.label8.Size = new System.Drawing.Size(93, 15);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Sergent";
+            this.label8.Text = "Détente vertical";
             // 
             // panel27
             // 
@@ -966,11 +968,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.serg1.AutoSize = true;
-            this.serg1.Location = new System.Drawing.Point(40, 13);
+            this.serg1.Location = new System.Drawing.Point(48, 13);
             this.serg1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.serg1.Name = "serg1";
             this.serg1.Size = new System.Drawing.Size(0, 15);
             this.serg1.TabIndex = 1;
+            this.serg1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel28
             // 
@@ -992,11 +995,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.serg2.AutoSize = true;
-            this.serg2.Location = new System.Drawing.Point(37, 13);
+            this.serg2.Location = new System.Drawing.Point(49, 13);
             this.serg2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.serg2.Name = "serg2";
             this.serg2.Size = new System.Drawing.Size(0, 15);
             this.serg2.TabIndex = 1;
+            this.serg2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel29
             // 
@@ -1018,7 +1022,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(32, 15);
+            this.label18.Location = new System.Drawing.Point(32, 13);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(50, 15);
@@ -1045,11 +1049,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vo1.AutoSize = true;
-            this.vo1.Location = new System.Drawing.Point(40, 13);
+            this.vo1.Location = new System.Drawing.Point(48, 15);
             this.vo1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.vo1.Name = "vo1";
             this.vo1.Size = new System.Drawing.Size(0, 15);
             this.vo1.TabIndex = 1;
+            this.vo1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel31
             // 
@@ -1071,11 +1076,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vo2.AutoSize = true;
-            this.vo2.Location = new System.Drawing.Point(37, 13);
+            this.vo2.Location = new System.Drawing.Point(49, 15);
             this.vo2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.vo2.Name = "vo2";
             this.vo2.Size = new System.Drawing.Size(0, 15);
             this.vo2.TabIndex = 1;
+            this.vo2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel32
             // 
@@ -1097,11 +1103,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.taillPR.AutoSize = true;
-            this.taillPR.Location = new System.Drawing.Point(43, 13);
+            this.taillPR.Location = new System.Drawing.Point(47, 13);
             this.taillPR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.taillPR.Name = "taillPR";
             this.taillPR.Size = new System.Drawing.Size(0, 15);
             this.taillPR.TabIndex = 1;
+            this.taillPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel33
             // 
@@ -1123,11 +1130,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.poidPR.AutoSize = true;
-            this.poidPR.Location = new System.Drawing.Point(43, 13);
+            this.poidPR.Location = new System.Drawing.Point(47, 13);
             this.poidPR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.poidPR.Name = "poidPR";
             this.poidPR.Size = new System.Drawing.Size(0, 15);
             this.poidPR.TabIndex = 1;
+            this.poidPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel34
             // 
@@ -1149,11 +1157,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.imcPR.AutoSize = true;
-            this.imcPR.Location = new System.Drawing.Point(43, 13);
+            this.imcPR.Location = new System.Drawing.Point(47, 13);
             this.imcPR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.imcPR.Name = "imcPR";
             this.imcPR.Size = new System.Drawing.Size(0, 15);
             this.imcPR.TabIndex = 1;
+            this.imcPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel35
             // 
@@ -1175,11 +1184,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.reactPR.AutoSize = true;
-            this.reactPR.Location = new System.Drawing.Point(43, 13);
+            this.reactPR.Location = new System.Drawing.Point(47, 13);
             this.reactPR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.reactPR.Name = "reactPR";
             this.reactPR.Size = new System.Drawing.Size(0, 15);
             this.reactPR.TabIndex = 1;
+            this.reactPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel36
             // 
@@ -1201,11 +1211,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.coursePR.AutoSize = true;
-            this.coursePR.Location = new System.Drawing.Point(43, 13);
+            this.coursePR.Location = new System.Drawing.Point(47, 13);
             this.coursePR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.coursePR.Name = "coursePR";
             this.coursePR.Size = new System.Drawing.Size(0, 15);
             this.coursePR.TabIndex = 1;
+            this.coursePR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel37
             // 
@@ -1227,11 +1238,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.souplPR.AutoSize = true;
-            this.souplPR.Location = new System.Drawing.Point(43, 13);
+            this.souplPR.Location = new System.Drawing.Point(47, 13);
             this.souplPR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.souplPR.Name = "souplPR";
             this.souplPR.Size = new System.Drawing.Size(0, 15);
             this.souplPR.TabIndex = 1;
+            this.souplPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel38
             // 
@@ -1253,11 +1265,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cordPR.AutoSize = true;
-            this.cordPR.Location = new System.Drawing.Point(43, 13);
+            this.cordPR.Location = new System.Drawing.Point(47, 13);
             this.cordPR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cordPR.Name = "cordPR";
             this.cordPR.Size = new System.Drawing.Size(0, 15);
             this.cordPR.TabIndex = 1;
+            this.cordPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel39
             // 
@@ -1279,11 +1292,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.sergPR.AutoSize = true;
-            this.sergPR.Location = new System.Drawing.Point(43, 13);
+            this.sergPR.Location = new System.Drawing.Point(47, 13);
             this.sergPR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sergPR.Name = "sergPR";
             this.sergPR.Size = new System.Drawing.Size(0, 15);
             this.sergPR.TabIndex = 1;
+            this.sergPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel40
             // 
@@ -1305,11 +1319,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.voPR.AutoSize = true;
-            this.voPR.Location = new System.Drawing.Point(43, 13);
+            this.voPR.Location = new System.Drawing.Point(47, 13);
             this.voPR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.voPR.Name = "voPR";
             this.voPR.Size = new System.Drawing.Size(0, 15);
             this.voPR.TabIndex = 1;
+            this.voPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel41
             // 
@@ -1351,46 +1366,90 @@
             this.label30.Size = new System.Drawing.Size(0, 15);
             this.label30.TabIndex = 1;
             // 
-            // course2
+            // panel1
             // 
-            this.course2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel1.BackgroundImage = global::FootStat.Properties.Resources.Soccer_Field_Wallpaper_Hd_29323_Hd_Wallpapers_in_Football___Telusers__copie;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.ID_V);
+            this.panel1.Controls.Add(this.NTESTS);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1383, 156);
+            this.panel1.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.course2.AutoSize = true;
-            this.course2.Location = new System.Drawing.Point(43, 13);
-            this.course2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.course2.Name = "course2";
-            this.course2.Size = new System.Drawing.Size(0, 15);
-            this.course2.TabIndex = 1;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Lime;
+            this.label9.Location = new System.Drawing.Point(81, 15);
+            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(107, 42);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Brodi";
             // 
-            // course1
+            // label1
             // 
-            this.course1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.course1.AutoSize = true;
-            this.course1.Location = new System.Drawing.Point(40, 13);
-            this.course1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.course1.Name = "course1";
-            this.course1.Size = new System.Drawing.Size(0, 15);
-            this.course1.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(40, 61);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 22);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "ID";
+            // 
+            // ID_V
+            // 
+            this.ID_V.Location = new System.Drawing.Point(84, 61);
+            this.ID_V.Margin = new System.Windows.Forms.Padding(5);
+            this.ID_V.Name = "ID_V";
+            this.ID_V.Size = new System.Drawing.Size(216, 29);
+            this.ID_V.TabIndex = 3;
+            this.ID_V.TextChanged += new System.EventHandler(this.ID_V_TextChanged);
+            // 
+            // NTESTS
+            // 
+            this.NTESTS.Enabled = false;
+            this.NTESTS.FormattingEnabled = true;
+            this.NTESTS.Items.AddRange(new object[] {
+            "par le nombre des tests"});
+            this.NTESTS.Location = new System.Drawing.Point(83, 100);
+            this.NTESTS.Margin = new System.Windows.Forms.Padding(5);
+            this.NTESTS.Name = "NTESTS";
+            this.NTESTS.Size = new System.Drawing.Size(217, 29);
+            this.NTESTS.TabIndex = 4;
+            this.NTESTS.Text = "Brodi";
+            this.NTESTS.SelectedIndexChanged += new System.EventHandler(this.NTESTS_SelectedIndexChanged);
             // 
             // Brodi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.tabl);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Brodi_Graph);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Brodi";
             this.Size = new System.Drawing.Size(1383, 745);
             this.Load += new System.EventHandler(this.Brodi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Brodi_Graph)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.tabl.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
@@ -1472,6 +1531,8 @@
             this.panel40.PerformLayout();
             this.panel41.ResumeLayout(false);
             this.panel41.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

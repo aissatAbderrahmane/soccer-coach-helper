@@ -118,220 +118,100 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="NEW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NEW1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="xlsx-win-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xlsx-win-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="grass-background-hd-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grass-background-hd-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fsgs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fsgs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SCH" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SCH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ajouters1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ajouters.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FINALS3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FINALS3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\bottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gass2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gass2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gass" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jNaJ822222" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jNaJ822222.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reccherche" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reccherche.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="9J2wqF4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9J2wqF4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SMA-25_PNG_High_Small_grande" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SMA-25_PNG_High_Small_grande.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="WZjZK0Q" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WZjZK0Q.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Action-exit-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Action-exit-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jNaJ8Ny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jNaJ8Ny.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wallpaper-football-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wallpaper-football-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pdf-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pdf-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cntb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cntb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WZjZK0Q" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WZjZK0Q.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phyA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phyA1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Soccer Field Wallpaper Hd 29323 Hd Wallpapers in Football - Telusers. copie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Soccer Field Wallpaper Hd 29323 Hd Wallpapers in Football - Telusers. copie.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="soccer_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soccer_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NEW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NEW1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refuser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refuser.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Arrow-left-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Arrow-left-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eassas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eassas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="thumb-1920-opie1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thumb-1920-opie1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BRD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BRD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="thumb-1920-516154" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thumb-1920-516154.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="re-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\re-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AC1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NEW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NEW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FINALS2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FINALS2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="basket-full" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\basket-full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="recherche" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\recherche.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="EVS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EVS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="grass-background-hd-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grass-background-hd-1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lefssss" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lefssss.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sans titre-1 copie1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sans titre-1 copie1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Actions-document-print-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Actions-document-print-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="guide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\guide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ajouter3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ajouter3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FINALS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FINALS1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pdf-icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pdf-icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ends" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ends.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chart-bar-chart-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chart-bar-chart-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AC2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AC2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bottoms" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\bottoms.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SMA-25_PNG_High_Small_grande1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SMA-25_PNG_High_Small_grande1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fiches" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fiches.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gass3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gass3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="printer-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\printer-icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1_153637865_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1_153637865_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wallpaper-football-2 copie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wallpaper-football-2 copie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sans titre-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sans titre-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sans titre-1 copie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sans titre-1 copie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="acceuls" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\acceuls.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ufuyguyh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ufuyguyh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Left copie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Left copie.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SMA-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SMA-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="thumb-1920-opie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thumb-1920-opie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sans titre-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sans titre-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ajouters" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\joueurs\Ajouters.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ijjll" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ijjll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ajouter2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ajouter2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gass1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gass1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ajouter1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ajouter1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Evaluation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Evaluation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="soccer-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\soccer-icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pdf-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pdf-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ajouter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ajouter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DET" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DET.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="printer-icon (1)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\printer-icon (1)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="printer-icon (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\printer-icon (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NEWAcceuim1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NEWAcceuim.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FINALS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FINALS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wallpaper-football-2 copie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wallpaper-football-2 copie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eval" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eval.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="grass-background-hd-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grass-background-hd-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SMA-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SMA-21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="phyA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phyA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="basket-full" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\basket-full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMCS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMCS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chart-bar-chart-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chart-bar-chart-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grass-background-hd-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grass-background-hd-1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flashpro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flashpro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="serg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\serg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="football-goal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\football-goal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="soccer_field_311115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soccer_field_311115.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pdf-icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pdf-icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fsesssssgs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fsesssssgs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="labopaps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\labopaps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
